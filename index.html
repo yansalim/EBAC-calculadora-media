@@ -1,52 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Média</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
 </head>
-</body>
+<body>
+<div class="container">
 
 <header>
-
     <img src="./images/logo.png" alt="capelo e diploma">
     <h1>Calculadora de Médias Estudantis</h1>
-    <form>
-        <input type="text" required placeholder="Nome da Matéria" />
-        <input type="number" required placeholder="Nota Obtida" min="0" max="10" />
-        <button type="submit">Adicionar </button>
- </form>
- <table>
-<thead>
-<tr>   
-    <th>Nome da Matéria</th>
-    <th>Nota da Atividade</th>
-    <th>Aprovado</th>
-</tr>
-<tbody> 
-    <tr>
-<td> Matéria 1</td>
-<td >7</td>
-<td><img src="./images/aprovado.png" alt="Emoji Festejando"/> </td>
-
-    </tr>
-
-
-</tbody>
-<tfoot>
-<tr>
-     <td>Média Final</td>
-     <td>7</td>
-     <td>Aprovado</td>
-
-</tfoot>
-
-
-</thead>
-
-    </table>
-
 </header>
+<form>
+    <input type="text" required placeholder="Nome da Matéria" />
+    <input type="number" required placeholder="Nota Obtida" min="0" max="10" />
+    <button type="submit">Adicionar </button>
+</form>
+<table cellspacing="0">
+    <thead>
+        <tr>
+            <th>Nome da Matéria</th>
+            <th>Nota da Atividade</th>
+            <th>Aprovado?</th>
 
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td> Matéria 1</td>
+            <td>7</td>
+            <td><img src="./images/aprovado.png" alt="Emoji Festejando" /> </td>
+
+        </tr>
+
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Média Final</td>
+            <td>7</td>
+            <td><span class="resultado reprovado">Aprovado</span></td>
+
+    </tfoot>
+
+
+
+
+</table>
+</div>
+
+
+</body>
 </html>
